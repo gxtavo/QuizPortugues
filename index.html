@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAM QUIZ - PORTUGUÊS</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <main class="tela-principal">
+
+        <section class='conteudos'>
+
+            <h1>QUIZ SOBRE CONHECIMENTOS GERAIS DE PORTUGUÊS</h1>
+
+            <div class='centro' id='instrucoes'>
+                Leia a Questão e Clique na Resposta Correta
+            </div>
+
+            <div class='questoes'>
+                
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
+
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div id='aviso'>Questão <span id='numero'></span> de <span id='total'></span></div>
+            
+        </section>
+
+        <footer class='centro'>Desenvolvido por Gustavo Carvalho &copy; 2021</footer>
+    </main>
+
+<!-- JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
